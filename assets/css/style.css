@@ -24,12 +24,14 @@ body{
     justify-content: space-between;
 }
 
-button{
+/*button for the new chat not currently developed*/
+#newChat{
     border: solid 0.5px rgba(255, 255, 255, 0.5);
     background-color: transparent;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 nav{
@@ -46,6 +48,93 @@ nav{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+
+.info{
+    color: rgba(255, 255. 255, 0.5);
+    font-size: 11px;
+    padding: 10px;
+}
+
+/*bottom part that comprehends the input bar, the disclaimer and the send icon*/
+.chat{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*text input bar and icon */
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+
+}
+
+/*without this the bar would be smaller, this makes sure that enlarges
+the whole section where the text would be inserted*/
+input{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.05) 0 54px 55px,
+            rgba(0,0,0,0.05) 0 -12px 30px,
+            rgba(0,0,0,0.05) 0 4px 6px,
+            rgba(0,0,0,0.05) 0 12px 3px,
+            rgba(0,0,0,0.05) 0 -3px 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#submit{
+    position: absolute;
+    border:none;
+    bottom: 10px;
+    right: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#messages {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    height: calc(100vh - 200px);
+    max-height: calc(100vh - 200px);
+    overflow: auto;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+}
+  
+i{
+    padding: 15px;
+}
+
+.user-message{
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.bot-message{
+    text-align: justify;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .history{
