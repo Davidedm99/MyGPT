@@ -4,5 +4,5 @@ A simple app that uses openAI API to work as ChatGPT. I tryed to copy the OpenAI
 
 <h3>:bangbang:(DISCLAIMER):bangbang:</h3>
 This app was at first deployed using my personal API key and since I had no way to hide it easily without letting the app work, if you want to use it for yourself just go to [OpenAi website](https://platform.openai.com/account/api-keys) and request you own API Key (they grant you a free one but has limited usage).<br>
-Then you can add it inside the apiKey variable in the [Javascript file](https://github.com/Davidedm99/MyGPT/tree/main/assets/js) in order to let the app work, hope you enjoy it! :smile: <br>
+Then you can add it inside the apiKey variable in the Javascript file in order to let the app work, hope you enjoy it! :smile: <br>
 Thanks :bow:
